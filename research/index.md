@@ -5,7 +5,7 @@ title: Research
 
 # {{ title }}
 
-My research interests include computer vision and computer graphics, but admittedly I am not an active researcher now. I still follow research trends and read arxiv papers from time to time. Currently I am a big fan of [Efficient AI](https://efficientml.ai). 
+My research interests include computer vision and computer graphics, but admittedly I am not an active researcher now. I still follow research trends and read arxiv papers from time to time. In the era of large models, I am a big fan of [Efficient AI](https://efficientml.ai). 
 
 ## Selected Publications
 A complete publication list can be found on my [google scholar](https://scholar.google.com/citations?user=Utqz3uYAAAAJ&hl=en) page.
