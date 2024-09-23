@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: Blog
+title: Notes
 ---
 
 # {{ title }}
