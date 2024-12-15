@@ -4,14 +4,14 @@ title: Xing Mei's Website
 ---
 # {{ title }}
 
-Welcome! 
+Welcome to my website! 
 
-I'm currently serving as a senior engineering manager at [Bytedance](https://bytedance.com/en/)/[TikTok](https://tiktok.com/), where I spearhead the on-device AI engineering initiatives for digital content creation. With a rich background in AI and software engineering, I've been at the forefront of developing lightweight AI solutions to enhance user experiences. Here, you'll find insights into my engineering and academic endeavors.
+My name is Xing Mei. I currently serve as a Senior Engineering Manager at [ByteDance](https://bytedance.com/en/)/[TikTok](https://tiktok.com/), where I lead the AI Platform US team. Our team is responsible for developing comprehensive AIGC solutions that power TikTok and ByteDance's suite of products. This website consolidates my professional experience and academic contributions. Feel free to drop me an email if you have any questions.
 
 ## [Experience](https://www.linkedin.com/in/xingmei)
 
 ## [Research](research)
 
-## [Blog](notes)
+## [Notes](notes)
 
 ## [Contact](mailto:xmei2005@gmail.com)
