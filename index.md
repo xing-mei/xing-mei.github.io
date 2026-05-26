@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Xing Mei's Website
+description: Personal website of Xing Mei, member of technical staff at Microsoft AI, focusing on high-performance infrastructure for multi-modal models.
 ---
 # {{ title }}
 

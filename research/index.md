@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
-title: Research
+title: Research – Xing Mei
+description: Research publications by Xing Mei in computer vision, computer graphics, and efficient AI.
 ---
 
 # {{ title }}
