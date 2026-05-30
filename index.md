@@ -1,15 +1,11 @@
 ---
 layout: layouts/base.njk
-title: Xing Mei's Website
-description: Personal website of Xing Mei, member of technical staff at Microsoft AI, focusing on high-performance infrastructure for multi-modal models.
+title: Xing Mei
+description: Personal website of Xing Mei, leading the Multimodal Infrastructure team at Microsoft AI.
 ---
 # {{ title }}
 
-Welcome to my website.
-
-I’m Xing Mei, a member of technical staff at [Microsoft AI (MAI)](https://microsoft.ai/). My work focuses on creating high-performance and scalable infrastructures for multi-modal models. Before joining MAI, I led the Vision Engineering team at [ByteDance](https://www.bytedance.com/en/), building GenAI solutions that powered a wide range of products.
-
-This site highlights my professional and academic journey. Feel free to get in touch for questions or collaborations.
+I lead the Multimodal Infrastructure team at [Microsoft AI (MAI)](https://microsoft.ai/), building the systems that power data, pretraining, post-training, inference, and serving of multimodal foundation models. Before MAI, I led the Vision Engineering team at [ByteDance](https://www.bytedance.com/en/), shipping GenAI solutions across a wide range of products.
 
 ## [Engineering](https://www.linkedin.com/in/xingmei)
 
