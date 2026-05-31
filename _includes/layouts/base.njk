@@ -17,6 +17,7 @@ title: Xing Mei's Website
     <link rel="stylesheet" href="/bundle.css">
   </head>
   <body>
+    {% if page.url != "/" %}<nav><a href="/">← Home</a></nav>{% endif %}
     {{ content | safe }}
   </body>
 </html>
