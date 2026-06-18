@@ -7796,7 +7796,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=11b26a68">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bb200b5b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7816,10 +7816,13 @@ $$</p>
 <p>where $r(x)$ is a reward function and $\beta$ controls how strongly we tilt.
 The sampler should prefer high-reward regions, without differentiating the
 reward or backpropagating through sampler trajectories.</p>
-<p>The main conceptual connection is simple: <strong>RAM is the first-order Taylor
-approximation of ITM</strong>. ITM uses the full exponential coefficient
-$e^{\beta r}-1$, while RAM keeps only the linear term $\beta r$. We will make
-this connection explicit before writing code.</p>
+<p>We will also connect ITM to
+<a href="https://arxiv.org/abs/2605.10759"><strong>Reinforce Adjoint Matching (RAM)</strong></a>,
+another reward-based post-training method for flow models. The main conceptual
+connection is simple: <strong>RAM is the first-order Taylor approximation of ITM</strong>.
+ITM uses the full exponential coefficient $e^{\beta r}-1$, while RAM keeps only
+the linear term $\beta r$. We will make this connection explicit before writing
+code.</p>
 <p>We will build a tiny 2D version from scratch:</p>
 <ol>
 <li>pretrain a flow-matching model on an 8-mode ring with a smooth reward,</li>
@@ -7842,7 +7845,7 @@ derivation, not a reproduction of the authors' experimental code.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a7a9df64">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0cd5751b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7854,7 +7857,7 @@ sampling.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b9b2059f">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8b1ae431">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7910,7 +7913,7 @@ sampling.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a7cd6292">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=42d7b614">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7921,7 +7924,7 @@ one place makes the later sections read like the math.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ad9db794">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ef5266d4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8026,7 +8029,7 @@ one place makes the later sections read like the math.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ed8fc5cb">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=82cd0359">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8052,7 +8055,7 @@ model you have, then tilt it.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6db8d5dd">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ee47b614">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8099,7 +8102,7 @@ model you have, then tilt it.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d5ae03ad">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=894c4843">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8146,7 +8149,7 @@ ODE <strong>backward</strong> to $t=0$.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=47772329">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=be6c4e39">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8243,7 +8246,7 @@ ODE <strong>backward</strong> to $t=0$.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=33d08c10">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f37c80b7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8290,7 +8293,7 @@ ODE <strong>backward</strong> to $t=0$.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f090380b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7597811b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8301,7 +8304,7 @@ model, not the unknown ideal data distribution.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=469fd30c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4f7b1e22">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8345,7 +8348,7 @@ model, not the unknown ideal data distribution.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=000a3468">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7f5f4137">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8516,7 +8519,7 @@ notebook stays with velocity models.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6c14ad9c">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=780e775c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8568,7 +8571,7 @@ simple Taylor relationship above.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d8f77593">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2f8022a7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8598,7 +8601,7 @@ $p_{\text{target}}\propto p_{\text{ref}}e^{\beta r}$.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=70bae97b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ec06329d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8701,7 +8704,7 @@ $p_{\text{target}}\propto p_{\text{ref}}e^{\beta r}$.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=df03a95c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d079a8bd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8760,7 +8763,7 @@ $p_{\text{target}}\propto p_{\text{ref}}e^{\beta r}$.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7667645c">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cbf835d4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8788,7 +8791,7 @@ density.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f9e6887d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c68f29e2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8810,7 +8813,7 @@ density.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=66149bc4">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=92aba785">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8849,7 +8852,7 @@ density.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=eff4387e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=62a37ee1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8882,7 +8885,7 @@ rather than as a faithful reproduction of the paper's reported performance.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9a152573">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=44696102">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9024,7 +9027,7 @@ rather than as a faithful reproduction of the paper's reported performance.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dcdf495c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d99d8ca1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9073,7 +9076,7 @@ rather than as a faithful reproduction of the paper's reported performance.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=26069ed7">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c09aa112">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9114,7 +9117,7 @@ rather than as a faithful reproduction of the paper's reported performance.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5619cbb4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=277e3100">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9143,7 +9146,7 @@ distribution in the density plots and the mode histogram.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a8b5f657">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7d4f95d2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9163,7 +9166,7 @@ $\beta$.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f099fd3e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=006daeb2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9389,7 +9392,7 @@ $\beta$.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d85a37e0">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5039fcc1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9438,7 +9441,7 @@ $\beta$.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5e4f2aa6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8bb7b321">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9463,7 +9466,7 @@ corresponding tilted target distribution.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aa4edb7d">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5e15fe3b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
