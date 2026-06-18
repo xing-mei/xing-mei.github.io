@@ -5,7 +5,7 @@ description: Notes and writing on AI, engineering, and research.
 ---
 
 # {{ title }}
-AI engineering and research notes in spare time. 
+AI engineering and research notes in my spare time. 
 ## Diffuison RL ##
 - [06/17/2026] [**Implicit Tilt Matching Explained (with connections to RAM)**](tilt_matching_tutorial.html)
 [[notebook](tilt_matching_tutorial.ipynb)][[colab](https://colab.research.google.com/github/xing-mei/xing-mei.github.io/blob/master/notes/tilt_matching_tutorial.ipynb)]
