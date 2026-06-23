@@ -8,6 +8,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.ignores.add("notes/ram-tutorial.html");
     eleventyConfig.addPassthroughCopy("notes/ram-tutorial.html");
     eleventyConfig.ignores.add("notes/tilt_matching_tutorial.html");
-    eleventyConfig.addPassthroughCopy("notes/tilt_matching_tutorial.html");
+    eleventyConfig.addPassthroughCopy("notes/ram-tutorial.html");
+    eleventyConfig.ignores.add("notes/flow_map_101.html");
+    eleventyConfig.addPassthroughCopy("notes/flow_map_101.html");
     eleventyConfig.addFilter("isoDate", (date) => date.toISOString().split("T")[0]);
 };
