@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("bundle.css");
     eleventyConfig.addPassthroughCopy("robots.txt");
+    eleventyConfig.addPassthroughCopy("CNAME");
     eleventyConfig.ignores.add("google6e603d039f038c5a.html");
     eleventyConfig.addPassthroughCopy("google6e603d039f038c5a.html");
     eleventyConfig.addPassthroughCopy("research/assets/*.{jpg,jpeg,png,gif,pdf,zip}");
