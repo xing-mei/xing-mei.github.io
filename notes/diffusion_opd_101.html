@@ -7822,8 +7822,8 @@ a two-mode teacher;</li>
 <a href="https://arxiv.org/abs/2605.10759">RAM</a> -- to handle multi-reward training.</li>
 </ol>
 <p>This notebook uses the same 8-mode toy world as our
-<a href="https://xing-mei.github.io/notes/ram-tutorial.html">RAM tutorial</a> and
-<a href="https://xing-mei.github.io/notes/tilt_matching_tutorial.html">Tilt Matching tutorial</a>.</p>
+<a href="https://xingmei.io/notes/ram-tutorial.html">RAM tutorial</a> and
+<a href="https://xingmei.io/notes/tilt_matching_tutorial.html">Tilt Matching tutorial</a>.</p>
 <p>The goal is not to reproduce image-scale numbers. The goal is to make the
 mechanics visible: <strong>where the student states come from, what the teacher
 supervises, how many states are queried, and why single-query DanceOPD can be
@@ -9134,10 +9134,10 @@ never reads a raw reward. So if your only supervision is a black-box scalar
 reward $r(x)$, you first need a way to turn that reward into a teacher field. Two
 companion tutorials do exactly that:</p>
 <ul>
-<li><a href="https://xing-mei.github.io/notes/tilt_matching_tutorial.html"><strong>Tilt Matching / ITM</strong></a>
+<li><a href="https://xingmei.io/notes/tilt_matching_tutorial.html"><strong>Tilt Matching / ITM</strong></a>
 learns the reward-tilted distribution
 $p_{\text{target}}(x)\propto p_{\text{ref}}(x)\exp(\beta\, r(x))$ directly.</li>
-<li><a href="https://xing-mei.github.io/notes/ram-tutorial.html"><strong>RAM</strong></a> keeps a
+<li><a href="https://xingmei.io/notes/ram-tutorial.html"><strong>RAM</strong></a> keeps a
 regression loss and nudges the field toward higher-reward endpoints -- no
 reward gradients, no SDE rollouts.</li>
 </ul>
@@ -9185,7 +9185,7 @@ which forces you to hand-balance reward scales and collapses per-sample signal.
 common-descent direction, so the balance is set automatically each step instead
 of tuned in advance.</p>
 <p>But as the multi-reward sweep in the
-<a href="https://xing-mei.github.io/notes/ram-tutorial.html">RAM tutorial</a> shows, this
+<a href="https://xingmei.io/notes/ram-tutorial.html">RAM tutorial</a> shows, this
 does not fully remove the interference. MGDA/MARBLE returns <strong>one point on the
 Pareto front</strong>. When the rewards genuinely conflict (near-disjoint optima), the
 combined gradient is a <em>compromise</em>: the model gives up roughly half of each

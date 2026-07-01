@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xing-mei.github.io/sitemap.xml
+Sitemap: https://xingmei.io/sitemap.xml
