@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://xingmei.io/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
   </url>
   <url>
     <loc>https://xingmei.io/notes/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
   </url>
   <url>
     <loc>https://xingmei.io/research/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
   </url>
   <url>
     <loc>https://xingmei.io/notes/ram-tutorial.html</loc>
@@ -27,5 +27,9 @@
   <url>
     <loc>https://xingmei.io/notes/diffusion_opd_101.html</loc>
     <lastmod>2026-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://xingmei.io/notes/building_dspark.html</loc>
+    <lastmod>2026-07-03</lastmod>
   </url>
 </urlset>
