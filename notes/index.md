@@ -6,6 +6,9 @@ description: Notes and writing on AI, engineering, and research.
 
 # {{ title }}
 AI engineering and research notes in my spare time. 
+## LLM ##
+- [07/03/2026] [**Building DSpark: Faster LLM Decoding, Losslessly**](building_dspark.html) [[notebook](building_dspark.ipynb)][[colab](https://colab.research.google.com/github/xing-mei/xing-mei.github.io/blob/master/notes/building_dspark.ipynb)]
+
 ## Diffusion ##
 - [06/30/2026] [**On-Policy Distillation for Diffusion: An Introduction**](diffusion_opd_101.html) [[notebook](diffusion_opd_101.ipynb)][[colab](https://colab.research.google.com/github/xing-mei/xing-mei.github.io/blob/master/notes/diffusion_opd_101.ipynb)]
 
