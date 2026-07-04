@@ -5,7 +5,6 @@ description: Notes and writing on AI, engineering, and research.
 ---
 
 # {{ title }}
-> "What I cannot create, I do not understand." - Richard Feynman
 
 Lightweight learning notes in my spare time. 
 
