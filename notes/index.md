@@ -5,7 +5,10 @@ description: Notes and writing on AI, engineering, and research.
 ---
 
 # {{ title }}
-AI engineering and research notes in my spare time. 
+> "What I cannot create, I do not understand." - Richard Feynman
+
+Lightweight learning notes in my spare time. 
+
 ## Diffusion ##
 - [06/30/2026] [**On-Policy Distillation for Diffusion: An Introduction**](diffusion_opd_101.html) [[notebook](diffusion_opd_101.ipynb)][[colab](https://colab.research.google.com/github/xing-mei/xing-mei.github.io/blob/master/notes/diffusion_opd_101.ipynb)]
 
