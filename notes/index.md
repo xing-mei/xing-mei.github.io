@@ -6,8 +6,7 @@ description: Notes and writing on AI, engineering, and research.
 
 # {{ title }}
 
-> "What I cannot create, I do not understand."
-> — Richard Feynman
+"What I cannot create, I do not understand." — Richard Feynman
 
 Generative AI and large models can be expensive, but understanding them doesn't have to be — every note here comes with a notebook that runs comfortably on the Colab free tier.
 
