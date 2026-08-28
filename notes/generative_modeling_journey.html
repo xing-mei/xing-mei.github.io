@@ -7891,7 +7891,7 @@ a.anchor-link {
 </head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9cae1b97">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dc3b4081">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7904,6 +7904,9 @@ a.anchor-link {
 post-training has <em>policy gradients</em> and <em>preference losses</em>; deployment has <em>distillation</em> and
 <em>quantization</em>. Each stage arrives with its own vocabulary and its own folklore. For an engineer with
 a basic ML background, that sprawl makes the underlying mechanism hard to understand and implement.</p>
+<p>This journey focuses on <strong>continuous-valued generative modeling</strong>: distributions on dequantized pixel
+or continuous latent spaces and paths that move continuously through them. Discrete data and
+token-generation models are outside its scope.</p>
 <p>This journey offers a <strong>practical, unified methodology</strong> for understanding and implementing these
 stages. The organizing idea is simple. Start from a source random variable</p>
 <p>$$
@@ -7939,13 +7942,14 @@ generative modeling, this note has succeeded.</p>
 RL post-training, distillation, and quantization. Comments and advice are welcome.</p>
 <p>Edit History:</p>
 <ul>
+<li>08-28-2026: add Chapter 1, The language of distributions</li>
 <li>08-27-2026: add the main journey and the pretraining table of contents</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=82f91d12">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=642a03fe">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7965,13 +7969,13 @@ the journey continues.</p>
 <tbody>
 <tr>
 <td>I · Foundations</td>
-<td><strong>1. The language of distributions</strong></td>
-<td>Laws, densities, samples, pushforwards, scores, and expectations.</td>
+<td><a href="distribution_language.html"><strong>1. The language of distributions</strong></a></td>
+<td>Continuous laws, samples, densities, pushforwards, exposed operations, joint laws, and conditional expectations.</td>
 </tr>
 <tr>
 <td></td>
 <td><strong>2. A practical divergence toolkit</strong></td>
-<td>What each divergence compares, what information it requires, and how we estimate it.</td>
+<td>What each divergence compares, what information it requires, and how it becomes computable.</td>
 </tr>
 <tr>
 <td></td>
@@ -8001,12 +8005,12 @@ the journey continues.</p>
 <tr>
 <td></td>
 <td><strong>8. Flow matching from distribution matching</strong></td>
-<td>Derive the local velocity regression and show why it targets the required marginal motion.</td>
+<td>Introduce continuous paths and endpoint couplings, then derive the local velocity regression and its marginal motion.</td>
 </tr>
 <tr>
 <td></td>
 <td><strong>9. One flow field, ODE and SDE samplers</strong></td>
-<td>Read a score from the velocity and preserve the same marginal path with or without noise.</td>
+<td>Build the differential toolkit, read a score from the velocity, and preserve the same marginal path with or without noise.</td>
 </tr>
 <tr>
 <td></td>
@@ -8069,7 +8073,7 @@ the journey continues.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=37ac8f71">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=766e44b8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>

@@ -18,5 +18,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("notes/building_dspark.html");
     eleventyConfig.ignores.add("notes/generative_modeling_journey.html");
     eleventyConfig.addPassthroughCopy("notes/generative_modeling_journey.html");
+    eleventyConfig.ignores.add("notes/distribution_language.html");
+    eleventyConfig.addPassthroughCopy("notes/distribution_language.html");
     eleventyConfig.addFilter("isoDate", (date) => date.toISOString().split("T")[0]);
 };
