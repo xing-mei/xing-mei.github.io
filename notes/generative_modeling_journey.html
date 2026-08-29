@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Generative modeling: a gentle journey with distribution matching — Xing Mei</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Generative Modeling: A Gentle Journey with Distribution Matching — Xing Mei</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7891,14 +7891,14 @@ a.anchor-link {
 </head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8f991527">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5c846c92">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="notebook-nav"><a href="https://xingmei.io/notes/">← All notes</a></div>
-<h1 id="Generative-modeling:-a-gentle-journey-with-distribution-matching">Generative modeling: a gentle journey with distribution matching<a class="anchor-link" href="#Generative-modeling:-a-gentle-journey-with-distribution-matching">¶</a></h1><p><a href="https://xingmei.io/"><strong>Xing Mei</strong></a> · 08-27-2026</p>
+<h1 id="Generative-Modeling:-A-Gentle-Journey-with-Distribution-Matching">Generative Modeling: A Gentle Journey with Distribution Matching<a class="anchor-link" href="#Generative-Modeling:-A-Gentle-Journey-with-Distribution-Matching">¶</a></h1><p><a href="https://xingmei.io/"><strong>Xing Mei</strong></a> · 08-27-2026</p>
 <p>Modern generative modeling has accumulated a lot of diverse concepts and ideas: pretraining has
 <em>adversarial learning</em>, <em>sample divergences</em>, <em>denoising diffusion</em>, and <em>flow matching</em>;
 post-training has <em>policy gradients</em> and <em>preference losses</em>; deployment has <em>distillation</em> and
@@ -7942,14 +7942,14 @@ generative modeling, this note has succeeded.</p>
 RL post-training, distillation, and quantization. Comments and advice are welcome.</p>
 <p>Edit History:</p>
 <ul>
-<li>08-28-2026: add Chapter 1, The language of distributions</li>
+<li>08-28-2026: add Chapter 1, The Language of Distributions</li>
 <li>08-27-2026: add the main journey and the pretraining table of contents</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=960d81f0">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=799dfdd8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7969,102 +7969,102 @@ the journey continues.</p>
 <tbody>
 <tr>
 <td>I · Foundations</td>
-<td><a href="distribution_language.html"><strong>1. The language of distributions</strong></a> [<a href="distribution_language.ipynb">notebook</a>][<a href="https://colab.research.google.com/github/xing-mei/xing-mei.github.io/blob/master/notes/distribution_language.ipynb">colab</a>]</td>
+<td><a href="distribution_language.html"><strong>1. The Language of Distributions</strong></a> [<a href="https://colab.research.google.com/github/xing-mei/xing-mei.github.io/blob/master/notes/generative_modeling_journey/distribution_language.ipynb">colab</a>]</td>
 <td>Continuous laws, samples, densities, pushforwards, exposed operations, joint laws, and conditional expectations.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>2. A practical divergence toolkit</strong></td>
+<td><strong>2. A Practical Divergence Toolkit</strong></td>
 <td>What each divergence compares, what information it requires, and how it becomes computable.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>3. The constraint matrix</strong></td>
+<td><strong>3. The Constraint Matrix</strong></td>
 <td>Turn model, target, divergence, and constraints into one reusable recipe.</td>
 </tr>
 <tr>
 <td>II · Pretraining</td>
-<td><strong>4. Strategy A: manufacture a density</strong></td>
+<td><strong>4. Strategy A: Manufacture a Density</strong></td>
 <td>Normalizing flows, variational autoencoders, and autoregressive models.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>5. Strategy B: compare samples directly</strong></td>
+<td><strong>5. Strategy B: Compare Samples Directly</strong></td>
 <td>GANs, MMD, sliced Wasserstein, and Sinkhorn divergence.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>6. From sample divergences to drifting fields</strong></td>
+<td><strong>6. From Sample Divergences to Drifting Fields</strong></td>
 <td>Energy fields, Sinkhorn drifting, and the three-body scattering rule.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>7. The fixed-K sampler as one generator</strong></td>
+<td><strong>7. The Fixed-K Sampler as One Generator</strong></td>
 <td>Why endpoint matching works, what unrolled training costs, and what it leaves behind.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>8. Flow matching from distribution matching</strong></td>
+<td><strong>8. Flow Matching from Distribution Matching</strong></td>
 <td>Introduce continuous paths and endpoint couplings, then derive the local velocity regression and its marginal motion.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>9. One flow field, ODE and SDE samplers</strong></td>
+<td><strong>9. One Flow Field, ODE and SDE Samplers</strong></td>
 <td>Build the differential toolkit, read a score from the velocity, and preserve the same marginal path with or without noise.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>10. DDPM path matching and DDIM sampling</strong></td>
+<td><strong>10. DDPM Path Matching and DDIM Sampling</strong></td>
 <td>Derive DDPM from path-law matching, then reuse its slice-wise predictor for DDIM jumps.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>11. What pretraining leaves behind</strong></td>
+<td><strong>11. What Pretraining Leaves Behind</strong></td>
 <td>Compare the generator zoo and explain why reusable fields become the substrate for later stages.</td>
 </tr>
 <tr>
 <td>III · Sampling and conditioning</td>
-<td><strong>12. The sampling operator</strong></td>
+<td><strong>12. The Sampling Operator</strong></td>
 <td>How solver, step budget, stochasticity, and guidance change the law produced by fixed weights.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>13. Couplings and optimal transport</strong></td>
+<td><strong>13. Couplings and Optimal Transport</strong></td>
 <td>How pairing choices reshape paths and make few-step generation easier.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>14. Conditional generation and classifier-free guidance</strong></td>
+<td><strong>14. Conditional Generation and Classifier-Free Guidance</strong></td>
 <td>Turn one target into a family and understand guidance as a sampling-time tilt.</td>
 </tr>
 <tr>
 <td>IV · Post-training</td>
-<td><strong>15. RL post-training</strong></td>
+<td><strong>15. RL Post-Training</strong></td>
 <td>Match a reward-tilted target that can be scored but cannot be sampled directly.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>16. Step distillation</strong></td>
+<td><strong>16. Step Distillation</strong></td>
 <td>Train a fast student to match the distribution produced by a slower teacher.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>17. Quantization recovery</strong></td>
+<td><strong>17. Quantization Recovery</strong></td>
 <td>Recover the full-precision model distribution inside a low-bit hypothesis class.</td>
 </tr>
 <tr>
 <td>V · Synthesis</td>
-<td><strong>18. The complete constraint matrix</strong></td>
+<td><strong>18. The Complete Constraint Matrix</strong></td>
 <td>Place the full generative-model lifecycle in one model-target-divergence table.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>19. When are two methods the same?</strong></td>
+<td><strong>19. When Are Two Methods the Same?</strong></td>
 <td>Separate equivalence of targets, objectives, training rules, and generated laws.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>20. Recap and limits</strong></td>
+<td><strong>20. Recap and Limits</strong></td>
 <td>Collect the reusable method and state honestly where the distribution-matching lens strains.</td>
 </tr>
 </tbody>
@@ -8073,7 +8073,7 @@ the journey continues.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a1ea8db9">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5b6bafbd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8081,7 +8081,7 @@ the journey continues.</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Citation">Citation<a class="anchor-link" href="#Citation">¶</a></h2><div class="highlight"><pre><span></span><span class="nc">@misc</span><span class="p">{</span><span class="nl">mei2026generativejourney</span><span class="p">,</span>
 <span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Xing Mei}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Generative modeling: a gentle journey with distribution matching}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Generative Modeling: A Gentle Journey with Distribution Matching}</span><span class="p">,</span>
 <span class="w">  </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2026}</span><span class="p">,</span>
 <span class="w">  </span><span class="na">url</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{https://xingmei.io/notes/generative_modeling_journey.html}</span>
 <span class="p">}</span>

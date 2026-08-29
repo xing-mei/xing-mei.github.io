@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("google6e603d039f038c5a.html");
     eleventyConfig.addPassthroughCopy("research/assets/*.{jpg,jpeg,png,gif,pdf,zip}");
     eleventyConfig.addPassthroughCopy("notes/*.ipynb");
+    eleventyConfig.addPassthroughCopy("notes/generative_modeling_journey/*.ipynb");
     eleventyConfig.ignores.add("notes/ram-tutorial.html");
     eleventyConfig.addPassthroughCopy("notes/ram-tutorial.html");
     eleventyConfig.ignores.add("notes/tilt_matching_tutorial.html");
