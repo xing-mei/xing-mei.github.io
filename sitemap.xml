@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://xingmei.io/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
     <loc>https://xingmei.io/notes/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
     <loc>https://xingmei.io/research/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
     <loc>https://xingmei.io/notes/ram-tutorial.html</loc>
@@ -34,10 +34,14 @@
   </url>
   <url>
     <loc>https://xingmei.io/notes/generative_modeling_journey.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-08-29</lastmod>
   </url>
   <url>
     <loc>https://xingmei.io/notes/generative_modeling_journey/distribution_language.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-08-29</lastmod>
+  </url>
+  <url>
+    <loc>https://xingmei.io/notes/generative_modeling_journey/divergence_toolkit.html</loc>
+    <lastmod>2026-08-29</lastmod>
   </url>
 </urlset>
