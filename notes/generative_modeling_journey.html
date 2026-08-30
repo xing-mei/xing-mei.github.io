@@ -7838,6 +7838,9 @@ a.anchor-link {
     width: 100%;
     font-size: 0.92em;
   }
+  body.jp-Notebook table.journey-toc td:nth-child(2) strong {
+    white-space: nowrap;
+  }
   body.jp-Notebook .jp-InputPrompt,
   body.jp-Notebook .jp-OutputPrompt {
     display: none;
@@ -7959,7 +7962,7 @@ RL post-training, distillation, and quantization. Comments and advice are welcom
 <h2 id="Table-of-contents">Table of contents<a class="anchor-link" href="#Table-of-contents">¶</a></h2><p>Each chapter is a short, independently executable notebook. It introduces the notation and examples
 it needs, so no chapter requires another notebook to have been run first. The content may evolve as
 the journey continues.</p>
-<table>
+<table class="journey-toc">
 <thead>
 <tr>
 <th>Part</th>
