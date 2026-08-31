@@ -7835,8 +7835,19 @@ a.anchor-link {
   }
   body.jp-Notebook table {
     display: table;
-    width: 100%;
+    width: min(89ch, 100%);
     font-size: 0.92em;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  body.jp-Notebook table.journey-toc {
+    table-layout: auto;
+    width: 100%;
+  }
+  body.jp-Notebook table.journey-toc th:nth-child(2),
+  body.jp-Notebook table.journey-toc td:nth-child(2) {
+    width: 1%;
+    white-space: nowrap;
   }
   body.jp-Notebook .jp-InputPrompt,
   body.jp-Notebook .jp-OutputPrompt {

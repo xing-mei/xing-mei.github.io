@@ -7835,11 +7835,14 @@ a.anchor-link {
   }
   body.jp-Notebook table {
     display: table;
-    width: 100%;
+    width: min(89ch, 100%);
     font-size: 0.92em;
+    margin-left: 0;
+    margin-right: auto;
   }
   body.jp-Notebook table.journey-toc {
     table-layout: auto;
+    width: 100%;
   }
   body.jp-Notebook table.journey-toc th:nth-child(2),
   body.jp-Notebook table.journey-toc td:nth-child(2) {
@@ -7899,7 +7902,7 @@ a.anchor-link {
 </head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2c5ae5c5">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1b092e57">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7950,6 +7953,7 @@ generative modeling, this note has succeeded.</p>
 RL post-training, distillation, and quantization. Comments and advice are welcome.</p>
 <p>Edit History:</p>
 <ul>
+<li>08-31-2026: add Chapter 4, Pretraining: Learning the Data Distribution</li>
 <li>08-30-2026: add Chapter 3, The Constraint Matrix</li>
 <li>08-29-2026: add Chapter 2, Measuring the Gap Between Distributions</li>
 <li>08-28-2026: add Chapter 1, The Language of Distributions</li>
@@ -7959,7 +7963,7 @@ RL post-training, distillation, and quantization. Comments and advice are welcom
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=26b88242">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=73d3d2ae">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7994,87 +7998,92 @@ the journey continues.</p>
 </tr>
 <tr>
 <td>II · Pretraining</td>
-<td><strong>4. Strategy A: Manufacture a Density</strong></td>
+<td><a href="https://xingmei.io/notes/generative_modeling_journey/pretraining.html"><strong>4. Pretraining: Learning the Data Distribution</strong></a> [<a href="https://colab.research.google.com/github/xing-mei/xing-mei.github.io/blob/master/notes/generative_modeling_journey/pretraining.ipynb">colab</a>]</td>
+<td>What pretraining receives, what it learns, and why its access pattern creates three strategy families.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>5. Strategy A: Manufacture a Density</strong></td>
 <td>Normalizing flows, variational autoencoders, and autoregressive models.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>5. Strategy B: Compare Samples Directly</strong></td>
+<td><strong>6. Strategy B: Compare Samples Directly</strong></td>
 <td>GANs, MMD, sliced Wasserstein, and Sinkhorn divergence.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>6. From Sample Divergences to Drifting Fields</strong></td>
+<td><strong>7. From Sample Divergences to Drifting Fields</strong></td>
 <td>Energy fields, Sinkhorn drifting, and the three-body scattering rule.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>7. The Fixed-K Sampler as One Generator</strong></td>
+<td><strong>8. The Fixed-K Sampler as One Generator</strong></td>
 <td>Why endpoint matching works, what unrolled training costs, and what it leaves behind.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>8. Flow Matching from Distribution Matching</strong></td>
+<td><strong>9. Flow Matching from Distribution Matching</strong></td>
 <td>Introduce continuous paths and endpoint couplings, then derive the local velocity regression and its marginal motion.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>9. One Flow Field, ODE and SDE Samplers</strong></td>
+<td><strong>10. One Flow Field, ODE and SDE Samplers</strong></td>
 <td>Build the differential toolkit, read a score from the velocity, and preserve the same marginal path with or without noise.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>10. DDPM Path Matching and DDIM Sampling</strong></td>
+<td><strong>11. DDPM Path Matching and DDIM Sampling</strong></td>
 <td>Derive DDPM from path-law matching, then reuse its slice-wise predictor for DDIM jumps.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>11. What Pretraining Leaves Behind</strong></td>
+<td><strong>12. What Pretraining Leaves Behind</strong></td>
 <td>Compare the generator zoo and explain why reusable fields become the substrate for later stages.</td>
 </tr>
 <tr>
 <td>III · Sampling and conditioning</td>
-<td><strong>12. The Sampling Operator</strong></td>
+<td><strong>13. The Sampling Operator</strong></td>
 <td>How solver, step budget, stochasticity, and guidance change the law produced by fixed weights.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>13. Couplings and Optimal Transport</strong></td>
+<td><strong>14. Couplings and Optimal Transport</strong></td>
 <td>How pairing choices reshape paths and make few-step generation easier.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>14. Conditional Generation and Classifier-Free Guidance</strong></td>
+<td><strong>15. Conditional Generation and Classifier-Free Guidance</strong></td>
 <td>Turn one target into a family and understand guidance as a sampling-time tilt.</td>
 </tr>
 <tr>
 <td>IV · Post-training</td>
-<td><strong>15. RL Post-Training</strong></td>
+<td><strong>16. RL Post-Training</strong></td>
 <td>Match a reward-tilted target that can be scored but cannot be sampled directly.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>16. Step Distillation</strong></td>
+<td><strong>17. Step Distillation</strong></td>
 <td>Train a fast student to match the distribution produced by a slower teacher.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>17. Quantization Recovery</strong></td>
+<td><strong>18. Quantization Recovery</strong></td>
 <td>Recover the full-precision model distribution inside a low-bit hypothesis class.</td>
 </tr>
 <tr>
 <td>V · Synthesis</td>
-<td><strong>18. The Complete Constraint Matrix</strong></td>
+<td><strong>19. The Complete Constraint Matrix</strong></td>
 <td>Place the full generative-model lifecycle in one model-target-divergence table.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>19. When Are Two Methods the Same?</strong></td>
+<td><strong>20. When Are Two Methods the Same?</strong></td>
 <td>Separate equivalence of targets, objectives, training rules, and generated laws.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong>20. Recap and Limits</strong></td>
+<td><strong>21. Recap and Limits</strong></td>
 <td>Collect the reusable method and state honestly where the distribution-matching lens strains.</td>
 </tr>
 </tbody>
@@ -8083,7 +8092,7 @@ the journey continues.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4a7bc1c1">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cf2045f4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
