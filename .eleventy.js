@@ -25,5 +25,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("notes/generative_modeling_journey/divergence_toolkit.html");
     eleventyConfig.ignores.add("notes/generative_modeling_journey/access_matrix.html");
     eleventyConfig.addPassthroughCopy("notes/generative_modeling_journey/access_matrix.html");
+    eleventyConfig.ignores.add("notes/generative_modeling_journey/pretraining.html");
+    eleventyConfig.addPassthroughCopy("notes/generative_modeling_journey/pretraining.html");
     eleventyConfig.addFilter("isoDate", (date) => date.toISOString().split("T")[0]);
 };
