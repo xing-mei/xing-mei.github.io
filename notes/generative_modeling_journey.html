@@ -7853,6 +7853,20 @@ a.anchor-link {
   body.jp-Notebook .jp-OutputPrompt {
     display: none;
   }
+  body.jp-Notebook details.folded-code {
+    max-width: 89ch;
+    margin: 0.6em 0 1em;
+  }
+  body.jp-Notebook details.folded-code summary {
+    width: fit-content;
+    cursor: pointer;
+    color: #0969da;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.86em;
+  }
+  body.jp-Notebook details.folded-code[open] summary {
+    margin-bottom: 0.6em;
+  }
   .series-nav {
     position: sticky;
     top: 0;
@@ -7902,7 +7916,7 @@ a.anchor-link {
 </head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1b092e57">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=17cb2b6a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7953,6 +7967,7 @@ generative modeling, this note has succeeded.</p>
 RL post-training, distillation, and quantization. Comments and advice are welcome.</p>
 <p>Edit History:</p>
 <ul>
+<li>08-31-2026: add Chapter 5, Strategy A: Manufacture a Density</li>
 <li>08-31-2026: add Chapter 4, Pretraining: Learning the Data Distribution</li>
 <li>08-30-2026: add Chapter 3, The Constraint Matrix</li>
 <li>08-29-2026: add Chapter 2, Measuring the Gap Between Distributions</li>
@@ -7963,7 +7978,7 @@ RL post-training, distillation, and quantization. Comments and advice are welcom
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=73d3d2ae">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8b06f615">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8003,7 +8018,7 @@ the journey continues.</p>
 </tr>
 <tr>
 <td></td>
-<td><strong>5. Strategy A: Manufacture a Density</strong></td>
+<td><a href="https://xingmei.io/notes/generative_modeling_journey/density_models.html"><strong>5. Strategy A: Manufacture a Density</strong></a> [<a href="https://colab.research.google.com/github/xing-mei/xing-mei.github.io/blob/master/notes/generative_modeling_journey/density_models.ipynb">colab</a>]</td>
 <td>Normalizing flows, variational autoencoders, and autoregressive models.</td>
 </tr>
 <tr>
@@ -8092,7 +8107,7 @@ the journey continues.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cf2045f4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b046bcaa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>

@@ -7853,6 +7853,20 @@ a.anchor-link {
   body.jp-Notebook .jp-OutputPrompt {
     display: none;
   }
+  body.jp-Notebook details.folded-code {
+    max-width: 89ch;
+    margin: 0.6em 0 1em;
+  }
+  body.jp-Notebook details.folded-code summary {
+    width: fit-content;
+    cursor: pointer;
+    color: #0969da;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.86em;
+  }
+  body.jp-Notebook details.folded-code[open] summary {
+    margin-bottom: 0.6em;
+  }
   .series-nav {
     position: sticky;
     top: 0;
@@ -7902,13 +7916,13 @@ a.anchor-link {
 </head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f31888a6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c0f74023">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="notebook-nav"><a href="https://xingmei.io/notes/generative_modeling_journey/access_matrix.html">← Previous: 3. The Constraint Matrix</a> · <a href="https://xingmei.io/notes/generative_modeling_journey.html">Journey home</a></div>
+<div class="notebook-nav"><a href="https://xingmei.io/notes/generative_modeling_journey/access_matrix.html">← Previous: 3. The Constraint Matrix</a> · <a href="https://xingmei.io/notes/generative_modeling_journey.html">Journey home</a> · <a href="https://xingmei.io/notes/generative_modeling_journey/density_models.html">Next: 5. Strategy A: Manufacture a Density →</a></div>
 <h1 id="4.-Pretraining:-Learning-the-Data-Distribution">4. Pretraining: Learning the Data Distribution<a class="anchor-link" href="#4.-Pretraining:-Learning-the-Data-Distribution">¶</a></h1><p><strong>Pretraining.</strong> Use broad data to learn a reusable base model of the data distribution, before later
 stages specialize, align, compress, or deploy that model.</p>
 <p>In pretraining, the target is the data law $P$. We never receive that law as a formula. We receive a
@@ -7918,7 +7932,7 @@ produce new samples with the same distributional structure.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e1df1e5c">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bae1fba3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7976,7 +7990,7 @@ regressing each $z_i$ to an arbitrary $y_i$.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d999b19b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=640e5510">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8054,7 +8068,7 @@ desired model freedom. Both are direct responses to the unavailable model densit
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=087445f1">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e21027c3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8116,7 +8130,7 @@ training signal at each point in the system.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f3cf1a28">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4dd3fd6e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8145,7 +8159,7 @@ representation difficulties.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d065f2e7">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8aeca358">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8245,7 +8259,7 @@ representation difficulties.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=206435df">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=62151442">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
