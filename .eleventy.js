@@ -31,5 +31,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("notes/generative_modeling_journey/density_models.html");
     eleventyConfig.ignores.add("notes/generative_modeling_journey/sample_divergences.html");
     eleventyConfig.addPassthroughCopy("notes/generative_modeling_journey/sample_divergences.html");
+    eleventyConfig.ignores.add("notes/generative_modeling_journey/drifting_fields.html");
+    eleventyConfig.addPassthroughCopy("notes/generative_modeling_journey/drifting_fields.html");
     eleventyConfig.addFilter("isoDate", (date) => date.toISOString().split("T")[0]);
 };
