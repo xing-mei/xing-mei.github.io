@@ -7797,14 +7797,38 @@ a.anchor-link {
 <link rel="canonical" href="https://xingmei.io/notes/generative_modeling_journey/distribution_language.html">
 
 <style id="generative-journey-style">
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
   body.jp-Notebook {
+    width: 100%;
     max-width: 1040px;
     margin: 0 auto;
     padding: 0 24px 72px;
     color: #1f2937;
     background: #ffffff;
   }
+  body.jp-Notebook main,
+  body.jp-Notebook .jp-Cell,
+  body.jp-Notebook .jp-Cell-inputWrapper,
+  body.jp-Notebook .jp-Cell-inputArea,
+  body.jp-Notebook .jp-MarkdownOutput {
+    min-width: 0;
+    max-width: 100%;
+  }
   body.jp-Notebook .jp-Cell {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body.jp-Notebook .jp-MarkdownCell .jp-InputArea,
+  body.jp-Notebook .jp-MarkdownOutput {
+    display: block;
+    width: 100%;
+    overflow: visible;
+  }
+  body.jp-Notebook .jp-MarkdownOutput {
     padding-left: 0;
     padding-right: 0;
   }
@@ -7849,9 +7873,44 @@ a.anchor-link {
     width: 1%;
     white-space: nowrap;
   }
+  body.jp-Notebook .MathJax_Display,
+  body.jp-Notebook .mjx-full-width,
+  body.jp-Notebook mjx-container[display="true"] {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.15em 0 0.35em;
+    -webkit-overflow-scrolling: touch;
+  }
+  body.jp-Notebook .jp-RenderedHTMLCommon pre,
+  body.jp-Notebook .jp-OutputArea pre {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
   body.jp-Notebook .jp-InputPrompt,
   body.jp-Notebook .jp-OutputPrompt {
     display: none;
+  }
+  body.jp-Notebook .notebook-nav {
+    display: none;
+  }
+  body.jp-Notebook details.folded-code {
+    max-width: 89ch;
+    margin: 0.6em 0 1em;
+  }
+  body.jp-Notebook details.folded-code summary {
+    width: fit-content;
+    cursor: pointer;
+    color: #0969da;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.86em;
+  }
+  body.jp-Notebook details.folded-code[open] summary {
+    margin-bottom: 0.6em;
   }
   .series-nav {
     position: sticky;
@@ -7883,24 +7942,99 @@ a.anchor-link {
   }
   @media (max-width: 760px) {
     body.jp-Notebook {
-      padding-left: 14px;
-      padding-right: 14px;
+      padding: 0 16px 56px;
     }
     body.jp-Notebook .jp-RenderedHTMLCommon {
       font-size: 16px;
+      line-height: 1.65;
+    }
+    body.jp-Notebook h1 {
+      font-size: 1.85rem;
+      line-height: 1.16;
+    }
+    body.jp-Notebook h2 {
+      margin-top: 1.8em;
+      font-size: 1.45rem;
+      line-height: 1.24;
+    }
+    body.jp-Notebook h3 {
+      font-size: 1.22rem;
+      line-height: 1.3;
+    }
+    body.jp-Notebook h4 {
+      font-size: 1.08rem;
+      line-height: 1.35;
+    }
+    body.jp-Notebook blockquote {
+      margin: 1.25em 0;
+      padding: 0.7em 0.85em;
+    }
+    body.jp-Notebook .jp-RenderedHTMLCommon ul:not(.list-inline),
+    body.jp-Notebook .jp-RenderedHTMLCommon ol:not(.list-inline) {
+      padding-left: 1.4em;
     }
     body.jp-Notebook table {
       display: block;
+      width: 100%;
       overflow-x: auto;
+      font-size: 0.82rem;
+      -webkit-overflow-scrolling: touch;
+    }
+    body.jp-Notebook table.journey-toc,
+    body.jp-Notebook table.journey-toc tbody,
+    body.jp-Notebook table.journey-toc tr,
+    body.jp-Notebook table.journey-toc td {
+      display: block;
+      width: 100%;
+    }
+    body.jp-Notebook table.journey-toc {
+      overflow: visible;
+      font-size: inherit;
+    }
+    body.jp-Notebook table.journey-toc thead {
+      display: none;
+    }
+    body.jp-Notebook table.journey-toc tr {
+      padding: 1em 0;
+      border-bottom: 1px solid #d0d7de;
+      background: transparent;
+    }
+    body.jp-Notebook table.journey-toc td {
+      padding: 0.15em 0;
+      white-space: normal;
+    }
+    body.jp-Notebook table.journey-toc td:empty {
+      display: none;
+    }
+    body.jp-Notebook table.journey-toc td:first-child {
+      color: #57606a;
+      font-size: 0.82em;
+    }
+    body.jp-Notebook table.journey-toc td:nth-child(2) {
+      width: 100%;
+      white-space: normal;
+      font-size: 1.02em;
+      overflow-wrap: anywhere;
+    }
+    body.jp-Notebook table.journey-toc td:nth-child(3) {
+      margin-top: 0.25em;
+      color: #424a53;
+      line-height: 1.5;
     }
     .series-nav {
       position: static;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3em;
+      font-size: 0.8em;
+      line-height: 1.45;
     }
   }
 </style>
 
 </head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<nav class="series-nav"><a href="https://xingmei.io/notes/">← All notes</a><span><a href="https://xingmei.io/notes/generative_modeling_journey.html">Journey home</a> &middot; <a href="https://xingmei.io/notes/generative_modeling_journey/divergence_toolkit.html">2. Measuring the Gap Between Distributions &rarr;</a></span></nav>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0838dd54">
 <div class="jp-Cell-inputWrapper" tabindex="0">
